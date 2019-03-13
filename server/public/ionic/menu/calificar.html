@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--
+
+    Licensed to the 
+
+-->
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="format-detection" content="telephone=no">
+
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script src="../js/jquery.min.js"></script>
+
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+
+        <script src="../js/forms.js"></script>
+
+        <script src="../js/configuration.js"></script>
+
+        <title>Phomework</title>
+<!-- ENVIO DE DATOS PARA VERIFICAR SI EXISTE UNA NOTIFICACION -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$.ajaxSetup({'cache':false});
+setInterval("loadNotifi()",500);    
+});
+function loadNotifi(){
+var parametros = {
+    "correo" : localStorage.getItem("correo"),
+    "tipo" : "estudiantes"
+};
+$.ajax({
+    type: 'POST',
+    url: 'http://phomework.com.co/www/php/notificaciones/sendWebMessage.php',
+    data: parametros
+}).done(function(info){
+    //var altura = $('#resultado').prop('scrollHeight');
+    //$('#resultado').scrollTop(altura);
+});
+}
+</script>
+    </head>
+
+    <body>
+
+
+
+        <div class="jumbotro text-center inicio">
+
+            <h3>Calificar Solucion</h3>
+            <div style="background:black;text-align: left;opacity:0.3;" id="tokens">
+            </div>
+            <div style="background:black;text-align: right;opacity:0.3;">
+
+                <a href="miperfilestudiante.html" style="color:white"><span class="glyphicon glyphicon-user" style="padding:5px;"></span></a>
+
+                <a href="soporte.html" style="color:white"><span class="glyphicon glyphicon-exclamation-sign" style="padding:5px;"></span></a>
+
+                <a href="cerrar.html" style="color:white"><span class="glyphicon glyphicon-off" style="padding:5px;"></span></a>
+
+            </div>
+
+            <a href="index.html"><img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png"></a>
+
+        </div>
+
+
+
+        <!-- Fondo de imagenes -->
+
+            <div class="fondo">
+
+                <div id="slideshow">
+
+                </div>
+
+            </div>
+
+
+
+    	<div class="container text-center">  
+         	<p style="text-align: left;">Califica la tarea<br>
+            </p> 
+
+            <form id="form_registerTareas">
+
+				<div class="input-group">
+
+					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+
+					<select id="calificacion" class="form-control" name="calificacion" placeholder="calificacion">
+                        <option value="">Califica la Respuesta</option>
+                        <option value="1">Mala</option>       
+                        <option value="2">Regular</option>  
+                        <option value="3">Buena</option>  
+                        <option value="4">Excelente</option>  
+                        <option value="5">Muy excelente</option>       
+                    </select>
+				</div>
+
+					
+				<div class="input-group">
+
+					<span class="input-group-addon"><i class="glyphicon glyphicon-text-size"></i></span>
+
+					<input id="comentarios" type="text" class="form-control" name="comentarios" placeholder="Escribe los comentarios">
+				</div>
+
+					
+				 <a href="javascript:;" onclick="form_calificar();"><div class="panel panel-default btestudiante">
+
+                    <div class="panel-body">Calificar</div>
+
+                </div></a>
+
+                <div id="resultado">..</div>	
+
+
+
+			</form>
+
+            
+
+        </div>
+
+
+
+        <div id="contact" class="jumbotro text-center">
+
+            <h6>Copyright wakusoft@2017</h6>
+
+        </div>
+
+
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+
+    </body>
+
+</html>
+

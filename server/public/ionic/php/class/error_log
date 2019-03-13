@@ -1,0 +1,88 @@
+[15-Jun-2017 15:30:18 America/Bogota] PHP Parse error:  syntax error, unexpected ')' in /home/leizycom/public_html/www/php/class/Tareas.php on line 83
+[15-Jun-2017 15:30:44 America/Bogota] PHP Parse error:  syntax error, unexpected ')' in /home/leizycom/public_html/www/php/class/Tareas.php on line 83
+[15-Jun-2017 15:31:11 America/Bogota] PHP Parse error:  syntax error, unexpected ')' in /home/leizycom/public_html/www/php/class/Tareas.php on line 83
+[15-Jun-2017 15:32:59 America/Bogota] PHP Parse error:  syntax error, unexpected '}' in /home/leizycom/public_html/www/php/class/Tareas.php on line 83
+[15-Jun-2017 15:33:12 America/Bogota] PHP Parse error:  syntax error, unexpected ')' in /home/leizycom/public_html/www/php/class/pruebas.php on line 5
+[15-Jun-2017 15:34:30 America/Bogota] PHP Parse error:  syntax error, unexpected '}' in /home/leizycom/public_html/www/php/class/Tareas.php on line 83
+[15-Jun-2017 15:35:24 America/Bogota] PHP Parse error:  syntax error, unexpected '}' in /home/leizycom/public_html/www/php/class/Tareas.php on line 84
+[15-Jun-2017 15:36:08 America/Bogota] PHP Parse error:  syntax error, unexpected '}' in /home/leizycom/public_html/www/php/class/Tareas.php on line 69
+[15-Jun-2017 15:36:42 America/Bogota] PHP Fatal error:  Class 'Tareas' not found in /home/leizycom/public_html/www/php/class/pruebas.php on line 4
+[15-Jun-2017 15:36:45 America/Bogota] PHP Fatal error:  Class 'Tareas' not found in /home/leizycom/public_html/www/php/class/pruebas.php on line 4
+[15-Jun-2017 17:03:03 America/Bogota] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'phomework.com.co' (-2) in /home/leizycom/public_html/www/php/conexion.php on line 5
+[15-Jun-2017 17:03:03 America/Bogota] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/leizycom/public_html/www/php/conexion.php on line 9
+[15-Jun-2017 17:08:56 America/Bogota] PHP Fatal error:  Call to a member function Update() on a non-object in /home/leizycom/public_html/www/php/class/pruebas.php on line 10
+[15-Jun-2017 17:09:58 America/Bogota] PHP Fatal error:  Call to a member function Update() on a non-object in /home/leizycom/public_html/www/php/class/pruebas.php on line 10
+[15-Jun-2017 17:10:35 America/Bogota] PHP Fatal error:  Call to a member function Update() on a non-object in /home/leizycom/public_html/www/php/class/pruebas.php on line 10
+[15-Jun-2017 17:10:51 America/Bogota] PHP Fatal error:  Call to a member function Update() on a non-object in /home/leizycom/public_html/www/php/class/pruebas.php on line 10
+[15-Jun-2017 17:11:14 America/Bogota] PHP Fatal error:  Call to a member function Update() on a non-object in /home/leizycom/public_html/www/php/class/pruebas.php on line 10
+[15-Jun-2017 17:13:33 America/Bogota] PHP Fatal error:  Call to a member function Update() on a non-object in /home/leizycom/public_html/www/php/class/pruebas.php on line 10
+[05-Jul-2017 13:39:47 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[05-Jul-2017 13:39:47 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[05-Jul-2017 13:40:00 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[05-Jul-2017 13:40:00 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[05-Jul-2017 13:41:28 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[05-Jul-2017 13:41:28 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[05-Jul-2017 13:49:08 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 350
+[05-Jul-2017 13:49:08 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 350
+[05-Jul-2017 13:50:34 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 350
+[05-Jul-2017 13:50:34 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 350
+[19-Oct-2017 11:04:41 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:04:41 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:04:54 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:04:54 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:05:15 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:05:15 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:05:49 America/Bogota] PHP Warning:  require_once(PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:05:49 America/Bogota] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:07:35 America/Bogota] PHP Warning:  require_once(/public_html/www/php/PHPMailer/class.phpmailer.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:07:35 America/Bogota] PHP Fatal error:  require_once(): Failed opening required '/public_html/www/php/PHPMailer/class.phpmailer.php' (include_path='.:/usr/share/php:/opt/alt/php55/usr/share/php:/opt/alt/php55/usr/share/pear') in /home/leizycom/public_html/www/php/class/mailNotify.php on line 10
+[19-Oct-2017 11:08:00 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:08:00 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:08:00 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:08:00 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:08:00 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:08:03 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:08:03 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:08:03 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:08:03 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:08:03 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:09:42 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:09:42 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:09:42 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:09:42 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:09:42 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:09:44 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:09:44 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:09:44 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:09:44 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:09:44 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:10:28 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:10:28 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:10:28 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:10:28 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:10:28 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:10:30 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:10:30 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:10:30 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:10:30 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:10:30 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:10:45 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:10:45 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:10:45 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:10:45 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:10:45 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:10:47 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:10:47 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:10:47 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:10:47 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:10:47 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:11:10 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:11:10 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:11:10 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:11:10 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:11:10 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318
+[19-Oct-2017 11:11:12 America/Bogota] PHP Warning:  Illegal string offset 'nombre' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 314
+[19-Oct-2017 11:11:12 America/Bogota] PHP Warning:  Illegal string offset 'descripcion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 315
+[19-Oct-2017 11:11:12 America/Bogota] PHP Warning:  Illegal string offset 'fecha_creacion' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 316
+[19-Oct-2017 11:11:12 America/Bogota] PHP Warning:  Illegal string offset 'fecha_vencimiento' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 317
+[19-Oct-2017 11:11:12 America/Bogota] PHP Warning:  Illegal string offset 'valor' in /home/leizycom/public_html/www/php/class/mailNotify.php on line 318

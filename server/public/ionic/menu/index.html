@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the 
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+        <script src="../js/forms.js"></script>
+        <script src="../js/configuration.js"></script>
+        <title>Phomework</title>
+<!-- ENVIO DE DATOS PARA VERIFICAR SI EXISTE UNA NOTIFICACION -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$.ajaxSetup({'cache':false});
+setInterval("loadNotifi()",500);    
+
+});
+
+function loadNotifi(){
+var parametros = {
+    "correo" : localStorage.getItem("correo"),
+    "tipo" : "estudiantes"
+};
+$.ajax({
+    type: 'POST',
+    url: 'http://phomework.com.co/www/php/notificaciones/sendWebMessage.php',
+    data: parametros
+}).done(function(info){
+    //var altura = $('#resultado').prop('scrollHeight');
+    //$('#resultado').scrollTop(altura);
+});
+}
+</script>
+    </head>
+    <body>
+
+        <div class="jumbotro text-center inicio">
+            <h3>Phomework</h3>
+            <div style="background:black;text-align: left;opacity:0.3;" id="tokens">
+                <script>
+                    $(document).ready(function(){
+                        var parametrer = {
+                            "encrypt":"husi",
+                            "consulta":"all",
+                            "id" : localStorage.getItem("id"),
+                            "tipo" : "estudiante"
+                        };
+                        var ruta = "../php/consultas/consultaAdicional.php";
+                        $.ajax({
+                            url: ruta,
+                            type: "POST",
+                            data: parametrer,
+                            beforeSend: function () {
+                                $('#respuesta1').html('Cargando...');
+                            },
+                            success: function(datos)
+                            {
+                                $('#respuesta1').html(datos);
+                            }
+                        });
+
+                        $('#idescrito').html('ID: '+localStorage.getItem('id'));
+
+                        //consulta de notificaciones
+                        var parametrer = {
+                            "encrypt":"husi",
+                            "consulta":"all",
+                            "id" : localStorage.getItem("id"),
+                            "tipo" : "estudiante"
+                        };
+                        var ruta = "../php/notificaciones/viewMessage.php";
+                        $.ajax({
+                            url: ruta,
+                            type: "POST",
+                            data: parametrer,
+                            beforeSend: function () {
+                                $('#notificaciones').html('Cargando...');
+                                $('#notificaciones').animate({
+                                           'left':'200px'
+                                },1000).animate({
+                                           'left':'10px'
+                                },500);
+                            },
+                            success: function(datos)
+                            {   
+                                var notificaciones = datos.split('ENTER');
+                                //alert('Tienes '+(notificaciones.length - 1)+' Notificaciones sin leer');
+                            /*for (var i = notificaciones.length - 1; i >= 0; i--) {
+                                var array = notificaciones[i].split("::");
+                                if(array[0]!="No existen notificaciones nuevas para ti"){
+                                    //confirm(array[1],array[0],array[2]);
+                                    var r = confirm(array[1]);
+                                    if (r == true) {
+                                        changenotification(array[3]);
+                                    } 
+                                }                            
+                            }*/
+                                
+                            }
+                        });
+                        $('#notificaciones').hide(5000);
+
+
+                        var parametrer = {
+                            "tipo" : "estudiante"
+                        };
+                        $.ajax({
+                            url: "http://phomework.com.co/backend/phomework/gotopublish.php",
+                            type: "POST",
+                            data: parametrer,
+                            beforeSend: function () {
+                                $('#publish').html('');
+                            },
+                            success: function(datos)
+                            {
+                                //alert(datos);
+                                $('#publish').html('<img style="width: 100%;height: 100px;" src="'+datos+'">');
+                            }
+                        });
+
+                        function changenotification(id){
+                            var parametrer = {
+                            "id" : id
+                            };
+                            $.ajax({
+                                url: "http://phomework.com.co/www/php/notificaciones/change.php",
+                                type: "POST",
+                                data: parametrer,
+                                beforeSend: function () {
+                                    //alert(id);
+                                },
+                                success: function(datos)
+                                {
+                                    console.log(datos);
+                                }
+                            });
+                        }
+
+                        function alertDGC(mensaje,titulo,fecha)
+                        {
+                            var dgcTiempo=500
+                            var ventanaCS='<div class="dgcAlert"><div class="dgcVentana"><strong>'+titulo+'</strong><div class="dgcCerrar"></div><div class="dgcMensaje">'+mensaje+'<small class="fecha">_'+fecha+'</small><br><div class="dgcAceptar">Aceptar</div></div></div></div>';
+                            $('body').append(ventanaCS);
+                            var alVentana=$('.dgcVentana').height();
+                            var alNav=$(window).height();
+                            var supNav=$(window).scrollTop();
+                            $('.dgcAlert').css('height',$(document).height());
+                            $('.dgcVentana').css('top',((alNav-alVentana)/2+supNav-100)+'px');
+                            $('.dgcAlert').css('display','block');
+                            $('.dgcAlert').animate({opacity:1},dgcTiempo);
+                            $('.dgcCerrar,.dgcAceptar').click(function(e) {
+                                $('.dgcAlert').animate({opacity:0},dgcTiempo);
+                                setTimeout("$('.dgcAlert').remove()",dgcTiempo);
+                            });
+                        }
+                    });
+                </script>
+            </div>
+            <div style="background:black;text-align: right;opacity:0.3;">
+                
+                <a href="miperfilestudiante.html" style="color:white"><span class="glyphicon glyphicon-user" style="padding:5px;"></span></a>
+                <a href="notificaciones.html" style="color:white"><span class="glyphicon glyphicon-info-sign" style="padding:5px;"></span></a>
+                <a href="soporte.html" style="color:white"><span class="" style="padding:5px;">FAQs</span></a>
+                <a href="cerrar.html" style="color:white"><span class="glyphicon glyphicon-off" style="padding:5px;"></span></a>
+            </div>
+            <a href="index.html"><img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png"></a>
+        </div>
+
+        <!-- Fondo de imagenes -->
+            <div class="fondo">
+                <div id="slideshow">
+                </div>
+            </div>
+
+    	<div class="container text-center">    	
+        <a href="#" id="idescrito" style="padding:20px;position: fixed;"></a>
+
+            <div class="container" style="float:left;">
+             
+                <a href="obsrMisTareas.html" style="padding:20px;">
+                    <img width="120" style="margin-left: -35px;" src="../image/tarea.png">
+                </a>
+            
+                <a href="http://phomework.com.co/www/menu/mistokens.html" style="padding:20px;">
+                    <img width="120" src="../image/monedas.png">
+                </a>
+
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#chatsoporte').html(' <a href="chatsop.html?docente=0&estudiante='+localStorage.getItem("id")+'" style="padding:20px;"> <img width="120" src="../image/pregunta.png"> </a>');
+                    $('#subirtareas').html(' <a onclick="irtarea();" href="javascript:;" style="padding:20px;"><img width="120" src="../image/subir.png"></a>');
+                });
+                    function irtarea(){
+                    window.open("imagenesWeb.php?idestudiante="+localStorage.getItem("id"), "Diseño Web", "width=400, height=300");
+                }
+                </script>
+                <div id="subirtareas">subirtareas</div>
+               <div id="chatsoporte">chatSopor</div>
+               
+            </div>
+        </div>
+
+        <div id="notificaciones" style="position: absolute;top: 100px;left: 0px;z-index: 120;">holahola</div>
+
+        <div id="publish" class="jumbotro text-center">            
+        </div>
+
+        <div id="contact" class="jumbotro text-center">
+            <h6>Copyright wakusoft@2017</h6>
+        </div>
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+    </body>
+</html>
+
+<style type="text/css">
+.dgcAlert {top: 0;position: absolute;width: 100%;display: block;height: 1000px; background: url(http://www.dgcmedia.es/recursosExternos/fondoAlert.png) repeat; text-align:center; opacity:0; display:none; z-index:999999999999999;}
+.dgcAlert .dgcVentana{width: 500px; background: white;min-height: 150px;position: relative;margin: 0 auto;color: black;padding: 10px;border-radius: 10px;}
+.dgcAlert .dgcVentana .dgcCerrar {height: 25px;width: 25px;float: right; cursor:pointer; background: url(http://www.dgcmedia.es/recursosExternos/cerrarAlert.jpg) no-repeat center center;}
+.dgcAlert .dgcVentana .dgcMensaje { margin: 0 auto; padding-top: 45px; text-align: center; width: 400px;font-size: 20px;}
+.dgcAlert .dgcVentana .dgcAceptar{background:#09C; bottom:20px; display: inline-block; font-size: 12px; font-weight: bold; height: 24px; line-height: 24px; padding-left: 5px; padding-right: 5px;text-align: center; text-transform: uppercase; width: 75px;cursor: pointer; color:#FFF; margin-top:50px;}
+.fecha{font-size: 9px;}
+</style>

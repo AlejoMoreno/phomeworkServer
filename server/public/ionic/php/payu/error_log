@@ -1,0 +1,189 @@
+[04-May-2017 14:08:28 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 18
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 1 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 2 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 3 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 4 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 5 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 6 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 7 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 8 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Warning:  Missing argument 9 for Mobilecare::__construct(), called in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 170 and defined in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 30
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: cedula in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 32
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: imei in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 33
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: nombre_seguro in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 35
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: fecha_fin in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 36
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: estado in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 37
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: notificado in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 38
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: duracion_meses in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 39
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined variable: fecha_inicial in /home/samsungm/public_html/Samsung-s8/api_crawford/mobilecare.php on line 40
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined property: stdClass::$paymentNetworkResponseCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 180
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined property: stdClass::$paymentNetworkResponseErrorMessage in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 181
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined property: stdClass::$trazabilityCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 182
+[04-May-2017 15:31:24 America/Chicago] PHP Notice:  Undefined property: stdClass::$responseMessage in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 184
+[04-May-2017 15:31:48 America/Chicago] PHP Notice:  Undefined property: stdClass::$paymentNetworkResponseCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 180
+[04-May-2017 15:31:48 America/Chicago] PHP Notice:  Undefined property: stdClass::$paymentNetworkResponseErrorMessage in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 181
+[04-May-2017 15:31:48 America/Chicago] PHP Notice:  Undefined property: stdClass::$trazabilityCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 182
+[04-May-2017 15:31:48 America/Chicago] PHP Notice:  Undefined property: stdClass::$responseMessage in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 184
+[04-May-2017 15:40:28 America/Chicago] PHP Notice:  Undefined variable: producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 178
+[04-May-2017 15:40:28 America/Chicago] PHP Notice:  Undefined variable: vigencia in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 179
+[04-May-2017 15:40:28 America/Chicago] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 180
+[04-May-2017 15:40:38 America/Chicago] PHP Notice:  Undefined variable: producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 178
+[04-May-2017 15:40:38 America/Chicago] PHP Notice:  Undefined variable: vigencia in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 179
+[04-May-2017 15:57:14 America/Chicago] PHP Notice:  Undefined variable: responseCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 184
+[04-May-2017 15:57:14 America/Chicago] PHP Notice:  Undefined variable: id_beneficiario in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 185
+[04-May-2017 15:57:14 America/Chicago] PHP Notice:  Undefined variable: estado_producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 15:57:14 America/Chicago] PHP Notice:  Undefined variable: imei in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 187
+[04-May-2017 15:57:14 America/Chicago] PHP Notice:  Undefined variable: fecha_creation in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 188
+[04-May-2017 15:57:45 America/Chicago] PHP Notice:  Undefined variable: responseCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 184
+[04-May-2017 15:57:45 America/Chicago] PHP Notice:  Undefined variable: id_beneficiario in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 185
+[04-May-2017 15:57:45 America/Chicago] PHP Notice:  Undefined variable: estado_producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 15:57:45 America/Chicago] PHP Notice:  Undefined variable: imei in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 187
+[04-May-2017 15:57:45 America/Chicago] PHP Notice:  Undefined variable: fecha_creation in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 188
+[04-May-2017 15:58:01 America/Chicago] PHP Notice:  Undefined variable: responseCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 184
+[04-May-2017 15:58:01 America/Chicago] PHP Notice:  Undefined variable: id_beneficiario in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 185
+[04-May-2017 15:58:01 America/Chicago] PHP Notice:  Undefined variable: estado_producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 15:58:01 America/Chicago] PHP Notice:  Undefined variable: imei in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 187
+[04-May-2017 15:58:01 America/Chicago] PHP Notice:  Undefined variable: fecha_creation in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 188
+[04-May-2017 15:58:07 America/Chicago] PHP Notice:  Undefined variable: responseCode in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 184
+[04-May-2017 15:58:07 America/Chicago] PHP Notice:  Undefined variable: id_beneficiario in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 185
+[04-May-2017 15:58:07 America/Chicago] PHP Notice:  Undefined variable: estado_producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 15:58:07 America/Chicago] PHP Notice:  Undefined variable: imei in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 187
+[04-May-2017 15:58:07 America/Chicago] PHP Notice:  Undefined variable: fecha_creation in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 188
+[04-May-2017 15:58:29 America/Chicago] PHP Notice:  Undefined variable: id_beneficiario in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 185
+[04-May-2017 15:58:29 America/Chicago] PHP Notice:  Undefined variable: estado_producto in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 15:58:29 America/Chicago] PHP Notice:  Undefined variable: imei in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 187
+[04-May-2017 15:58:29 America/Chicago] PHP Notice:  Undefined variable: fecha_creation in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 188
+[04-May-2017 16:06:50 America/Chicago] PHP Notice:  Undefined variable: datapayu in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 16:06:50 America/Chicago] PHP Fatal error:  Call to a member function estadoPAYU() on a non-object in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 186
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 21
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 21
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 2 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 22
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 22
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 3 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 23
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 23
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 4 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 24
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 24
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 9 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 25
+[04-May-2017 19:22:53 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 25
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: other in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 18
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 20
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 21
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 21
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 2 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 22
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 22
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 3 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 23
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 23
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 4 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 24
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 24
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 9 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 25
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined offset: 1 in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 25
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: PAYER_NAME in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 26
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: PAYER_EMAIL in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 27
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: PAYER_CONTACT_PHONE in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 28
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: PAYER_DNI in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 29
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: PAYMENT_METHOD in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 30
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: CREDIT_CARD_NUMBER in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 31
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: CREDIT_CARD_EXPIRATION_DATE in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 32
+[05-May-2017 12:26:41 America/Chicago] PHP Notice:  Undefined index: CREDIT_CARD_SECURITY_CODE in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 33
+[05-May-2017 13:06:29 America/Chicago] PHP Notice:  Undefined variable: e in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 192
+[09-May-2017 18:46:13 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 123
+[09-May-2017 18:47:12 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 18:48:50 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 18:48:56 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 18:49:33 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 18:49:57 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 18:50:09 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 19:05:29 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[09-May-2017 19:05:29 America/Chicago] PHP Fatal error:  Using $this when not in object context in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 206
+[09-May-2017 19:06:33 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index.php on line 124
+[09-May-2017 19:06:36 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[10-May-2017 15:48:30 America/Chicago] PHP Fatal error:  Undefined class constant 'DEBIT_CARD_NUMBER' in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index_debito.php on line 150
+[10-May-2017 15:50:46 America/Chicago] PHP Fatal error:  Cannot redeclare class PayUCreditCards in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/lib/PayU/PayUDebitCards.php on line 12
+[10-May-2017 15:51:41 America/Chicago] PHP Fatal error:  Cannot redeclare class PayUCreditCards in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/lib/PayU/PayUDebitCards.php on line 12
+[10-May-2017 15:52:53 America/Chicago] PHP Fatal error:  Undefined class constant 'DEBIT_CARD_NUMBER' in /home/samsungm/public_html/Samsung-s8/api_crawford/payu/index_debito.php on line 150
+[10-May-2017 17:10:51 America/Chicago] PHP Notice:  Array to string conversion in /home/samsungm/public_html/Samsung-s8/api_crawford/dataPayu.php on line 57
+[10-May-2017 19:58:24 America/Bogota] PHP Warning:  include(../dataPayu.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/payu/index.php on line 15
+[10-May-2017 19:58:24 America/Bogota] PHP Warning:  include(): Failed opening '../dataPayu.php' for inclusion (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/leizycom/public_html/www/php/payu/index.php on line 15
+[10-May-2017 19:58:24 America/Bogota] PHP Warning:  include(../mobilecare.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/payu/index.php on line 16
+[10-May-2017 19:58:24 America/Bogota] PHP Warning:  include(): Failed opening '../mobilecare.php' for inclusion (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/leizycom/public_html/www/php/payu/index.php on line 16
+[10-May-2017 19:58:24 America/Bogota] PHP Warning:  include(../productos.php): failed to open stream: No such file or directory in /home/leizycom/public_html/www/php/payu/index.php on line 17
+[10-May-2017 19:58:24 America/Bogota] PHP Warning:  include(): Failed opening '../productos.php' for inclusion (include_path='.:/opt/alt/php55/usr/share/pear:/opt/alt/php55/usr/share/php') in /home/leizycom/public_html/www/php/payu/index.php on line 17
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: other in /home/leizycom/public_html/www/php/payu/index.php on line 19
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 21
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 22
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 22
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 2 in /home/leizycom/public_html/www/php/payu/index.php on line 23
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 23
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 3 in /home/leizycom/public_html/www/php/payu/index.php on line 24
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 24
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 4 in /home/leizycom/public_html/www/php/payu/index.php on line 25
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 25
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 9 in /home/leizycom/public_html/www/php/payu/index.php on line 26
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 26
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 10 in /home/leizycom/public_html/www/php/payu/index.php on line 27
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined offset: 1 in /home/leizycom/public_html/www/php/payu/index.php on line 27
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: PAYER_NAME in /home/leizycom/public_html/www/php/payu/index.php on line 28
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: PAYER_EMAIL in /home/leizycom/public_html/www/php/payu/index.php on line 29
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: PAYER_CONTACT_PHONE in /home/leizycom/public_html/www/php/payu/index.php on line 30
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: PAYER_DNI in /home/leizycom/public_html/www/php/payu/index.php on line 31
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: PAYMENT_METHOD in /home/leizycom/public_html/www/php/payu/index.php on line 32
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: CREDIT_CARD_NUMBER in /home/leizycom/public_html/www/php/payu/index.php on line 33
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: CREDIT_CARD_EXPIRATION_DATE in /home/leizycom/public_html/www/php/payu/index.php on line 34
+[10-May-2017 19:58:24 America/Bogota] PHP Notice:  Undefined index: CREDIT_CARD_SECURITY_CODE in /home/leizycom/public_html/www/php/payu/index.php on line 35
+[10-May-2017 19:58:24 America/Bogota] PHP Fatal error:  Class 'Productos' not found in /home/leizycom/public_html/www/php/payu/index.php on line 40
+[10-May-2017 20:13:21 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 13
+[10-May-2017 20:13:21 America/Bogota] PHP Notice:  Undefined index: referenceCode in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 14
+[10-May-2017 20:13:21 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 15
+[10-May-2017 20:13:21 America/Bogota] PHP Notice:  Undefined index: tipo in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 16
+[10-May-2017 20:13:21 America/Bogota] PHP Notice:  Undefined index: description in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 17
+[10-May-2017 20:13:21 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 18
+[26-May-2017 19:34:45 America/Bogota] PHP Notice:  Undefined index: referenceCode in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 14
+[26-May-2017 19:34:45 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 15
+[26-May-2017 19:34:45 America/Bogota] PHP Notice:  Undefined index: tipo in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 16
+[26-May-2017 19:34:45 America/Bogota] PHP Notice:  Undefined index: description in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 17
+[26-May-2017 19:34:45 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/index_efectivo.php on line 18
+[30-May-2017 19:26:12 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[30-May-2017 19:26:12 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[30-May-2017 19:26:12 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[30-May-2017 19:26:12 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[30-May-2017 19:26:12 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[30-May-2017 23:08:43 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[30-May-2017 23:08:43 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[30-May-2017 23:08:43 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[30-May-2017 23:08:43 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[30-May-2017 23:08:43 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[30-May-2017 23:09:35 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[30-May-2017 23:09:35 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[30-May-2017 23:09:35 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[30-May-2017 23:09:35 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[30-May-2017 23:09:35 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[30-May-2017 23:09:46 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[30-May-2017 23:09:46 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[30-May-2017 23:09:46 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[30-May-2017 23:09:46 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[30-May-2017 23:09:46 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[31-May-2017 11:32:35 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[31-May-2017 11:32:35 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[31-May-2017 11:32:35 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[31-May-2017 11:32:35 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[31-May-2017 11:32:35 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[31-May-2017 11:32:56 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[31-May-2017 11:32:56 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[31-May-2017 11:32:56 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[31-May-2017 11:32:56 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[31-May-2017 11:32:56 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[31-May-2017 11:33:56 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[31-May-2017 11:33:56 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[31-May-2017 11:33:56 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[31-May-2017 11:33:56 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[31-May-2017 11:33:56 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[31-May-2017 11:35:56 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[31-May-2017 11:35:56 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[31-May-2017 11:35:56 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[31-May-2017 11:35:56 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[31-May-2017 11:35:56 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38
+[31-May-2017 11:37:55 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 2
+[31-May-2017 11:37:55 America/Bogota] PHP Notice:  Undefined index: valor in /home/leizycom/public_html/www/php/payu/efectivo.php on line 20
+[31-May-2017 11:37:55 America/Bogota] PHP Notice:  Undefined index: id in /home/leizycom/public_html/www/php/payu/efectivo.php on line 33
+[31-May-2017 11:37:55 America/Bogota] PHP Notice:  Undefined index: email in /home/leizycom/public_html/www/php/payu/efectivo.php on line 34
+[31-May-2017 11:37:55 America/Bogota] PHP Notice:  Undefined index: paymentMethod in /home/leizycom/public_html/www/php/payu/efectivo.php on line 38

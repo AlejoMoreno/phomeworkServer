@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<!--
+
+    Licensed to the 
+
+-->
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="format-detection" content="telephone=no">
+
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script src="../js/jquery.min.js"></script>
+
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+
+        <script src="../js/forms.js"></script>
+
+        <script src="../js/configuration.js"></script>
+        <script src="../js/persistanData.js"></script>
+
+        <title>Phomework</title>
+
+    </head>
+
+    <body>
+
+
+
+        <div class="jumbotro text-center inicio">
+
+            <h3>Mis Tokens</h3>
+            <div style="background:black;text-align: left;opacity:0.3;" id="tokens">
+            </div>
+            <div style="background:black;text-align: right;opacity:0.3;">
+
+                <a href="miperfilestudiante.html" style="color:white"><span class="glyphicon glyphicon-user" style="padding:5px;"></span></a>
+                <a href="notificaciones.html" style="color:white"><span class="glyphicon glyphicon-info-sign" style="padding:5px;"></span></a>
+
+                <a href="soporte.html" style="color:white"><span class="" style="padding:5px;">FAQs</span></a>
+
+                <a href="cerrar.html" style="color:white"><span class="glyphicon glyphicon-off" style="padding:5px;"></span></a>
+
+            </div>
+
+            <a href="index.html"><img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png"></a>
+
+        </div>
+
+
+
+        <!-- Fondo de imagenes -->
+
+            <div class="fondo">
+
+                <div id="slideshow">
+
+                </div>
+
+            </div>
+
+
+
+    	<div class="container text-center">    	
+
+
+
+            <div class="container ">
+
+              <div class="row">
+
+                <div class="col-sm-12" style="color:white;">
+
+                  <script>
+                      $(document).ready(function(){
+                        selectTokensIds();
+                        selectTokensAll();
+                        $('#linkpayu').html('<a href="payu.html?id='+localStorage.getItem("id")+'"><div style="padding:20px;border:1px solid blue;-webkit-box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.75);box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.75);"><img width="50" src="../image/baoloto.png"><img width="80" src="../image/efecty.png"><img width="40" src="../image/visa.png"><br>Ve por más Tokens (valor de $1.000 pesos C/U)</div></a>');
+                        
+                      });
+
+                      var parametrer = {
+                            "tipo" : "estudiante"
+                        };
+                        $.ajax({
+                            url: "http://phomework.com.co/backend/phomework/gotopublish.php",
+                            type: "POST",
+                            data: parametrer,
+                            beforeSend: function () {
+                                $('#publish').html('');
+                            },
+                            success: function(datos)
+                            {
+                                //alert(datos);
+                                $('#publish').html('<img style="width: 100%;height: 100px;" src="'+datos+'">');
+                            }
+                        });
+
+                      /*
+                        selectTokensIds();
+                    */
+                    function selectTokensIds(){
+                        var idestudiante = localStorage.getItem("id");
+                        //validar los datos que esten diligenciados
+                        //enviar datos al servidor
+                        var parametros = {
+                            "idestudiante" : idestudiante,
+                            "consulta" : 'Cantidad',
+                            "encrypt" : "encrypt"
+                        };
+                        $.ajax({
+                                data:  parametros,
+                                url:   host+'php/consultas/consultarTokens.php',
+                                type:  'post',
+                                beforeSend: function () {
+                                    $('#resultado1').html("Cargando datos.");
+                                },
+                                success:  function (response) {
+                                    $('#resultado1').html(response);
+                                }
+                        });
+                    }
+
+                    /*
+                        selectTokensAll();
+                    */
+                    function selectTokensAll(){
+                        var idestudiante = localStorage.getItem("id");
+                        //validar los datos que esten diligenciados
+                        //enviar datos al servidor
+                        var parametros = {
+                            "idestudiante" : idestudiante,
+                            "consulta" : 'historico',
+                            "encrypt" : "encrypt"
+                        };
+                        $.ajax({
+                                data:  parametros,
+                                url:   host+'php/consultas/consultarTokens.php',
+                                type:  'post',
+                                beforeSend: function () {
+                                    $('#resultado').html("Cargando datos.");
+                                },
+                                success:  function (response) {
+                                    $('#resultado').html(response);
+                                }
+                        });
+                    }
+
+                  </script>
+                  <h1 style="color:black">Tienes un total de <div id="resultado1">...</div> Tokens</h1><br><br>
+                  <div id="linkpayu">...</div>
+                  <div id="resultado">...</div>
+                  
+
+                </div>
+
+              </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <div id="publish" class="jumbotro text-center">            
+        </div>
+
+        <div id="contact" class="jumbotro text-center">
+
+            <h6>Copyright wakusoft@2017</h6>
+
+        </div>
+
+
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+
+    </body>
+
+</html>

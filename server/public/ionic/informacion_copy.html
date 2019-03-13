@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" type="text/css" href="css/phomeworks.css">
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>Phomework</title>
+
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+          <script>
+            var OneSignal = window.OneSignal || [];
+            OneSignal.push(["init", {
+              appId: "d83f7a35-792a-4254-b6c5-1a7c3b0a1d9b",
+              autoRegister: true, /* Set to true to automatically prompt visitors */
+              httpPermissionRequest: {
+                enable: true
+              },
+              notifyButton: {
+                  enable: true /* Set to false to hide */
+              }
+            }]);
+
+            OneSignal.push(function() {
+              /* These examples are all valid */
+              OneSignal.getUserId(function(userId) {
+                //console.log("OneSignal User ID:", userId);
+                 localStorage.setItem("pushID", userId);
+                // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+              });
+                           
+              OneSignal.getUserId().then(function(userId) {
+                 localStorage.setItem("pushID1", userId);
+                //console.log("OneSignal User ID:", userId);
+                // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+              });
+            });
+          </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotro text-center inicio">
+            <h3>Phomework</h3>
+            <img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="image/phome-ico.png">
+        </div>
+
+    	<div class="container text-center">    	
+
+            <a onclick="javascript:window.close();" href="#"><div class="panel panel-default estudiante">
+                <img width="150" style="float: left;padding: 10px;margin-left: 10%;" src="https://image.flaticon.com/icons/svg/201/201811.svg">
+                <div class="panel-body"><h2>Info Estudiante</h2></div>
+            </div></a>
+
+            <a onclick="javascript:window.close();" href="#"><div class="panel panel-default docente">
+                <img width="150" style="float: left;padding: 10px;margin-left: 10%;" src="https://image.flaticon.com/icons/svg/194/194935.svg">
+                <div class="panel-body "><h2>Info Docente</h2></div>
+            </div></a>
+
+		</div>
+
+        <div id="contact" class="jumbotro text-center">
+            <h6>Copyright wakusoft@2017</h6>
+        </div>
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+    </body>
+</html>
+
+<style type="text/css">
+.container{
+    margin-top: 30px;
+    margin-left: -5%;
+    width: 109%;
+}
+body {
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+      -webkit-animation-iteration-count: 10;
+    }
+
+
+    @keyframes colorchange
+    {
+      0%   {background: white;}
+      25%  {background: #207ce5;}
+      50%  {background: #20e3a2;}
+      75%  {background: #207ce5;}
+      100% {background: white;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: white;}
+      25%  {background: #207ce5;}
+      50%  {background: #20e3a2;}
+      75%  {background: #207ce5;}
+      100% {background: white;}
+    }
+</style>

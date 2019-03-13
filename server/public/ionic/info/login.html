@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the 
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+        <script src="../js/forms.js"></script>
+        <script src="../js/configuration.js"></script>
+        <title>Phomework</title>
+        <script type="text/javascript">
+            /* 
+    LOGIN
+    wakusoft.co
+*/
+$(document).ready(function(){
+    /*if(localStorage.getItem("tipo")=='estudiante'){
+        window.location.assign("../menu/index.html");
+    }
+    else if(localStorage.getItem("tipo")=='docente'){
+        window.location.assign("../menuDocente/index.html");
+    }*/
+});
+
+
+function form_login(){
+    var logincorreo = $.trim( $('#logincorreo').val() );
+    var loginclave = $('#loginclave').val();
+    var pushID = localStorage.getItem("pushID");
+    //validar los datos que esten diligenciados
+    validate("logincorreo","El correo esta incompleto verifica");
+    validate("loginclave","La clave esta incompleto verifica");
+    //enviar datos al servidor
+    var parametros = {
+        "correo" : logincorreo,
+        "clave" : loginclave,
+        "pushID" : pushID,
+        "encrypt" : "encrypt"
+    };
+    $.ajax({
+            data:  parametros,
+            url:   host+'php/login.php',
+            type:  'post',
+            beforeSend: function () {
+                $('#resultado').html("Cargando datos.");
+            },
+            success:  function (response) {
+                if(response.substr(0,1)=='{'){
+                    setStorage(response);
+                }else{
+                    //error en login
+                    $('#resultado').html(response);
+                }
+            }
+    });
+}
+
+function setStorage(Json){
+    //verificacion del storage
+    if (typeof(Storage) !== "undefined") {
+        var objJson = jQuery.parseJSON(Json);
+        localStorage.setItem("id", objJson.idestudiante);
+        localStorage.setItem("correo", objJson.correo);  
+        localStorage.setItem("password", objJson.clave);  
+        alert('Bienvenido '+localStorage.getItem("correo"));
+        //localStorage.getItem("correo");
+        //validacion si es docente o estudiante
+        if(objJson.nickname === undefined){
+            localStorage.setItem("tipo", 'docente');
+            window.location.assign("../menuDocente/");            
+        }
+        else{
+            //es estudiante
+            localStorage.setItem("tipo", 'estudiante');
+            window.location.assign("../menu/");
+        }
+        
+    } else {$('#resultado').html('Tu Dispositivo no soporta esta aplicación');}
+}
+
+        </script>
+
+    </head>
+    <body>
+
+         <div class="jumbotro text-center inicio">
+            <h3>Ingresa a tu cuenta</h3>
+            <img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png">
+        </div>
+
+        <!-- Fondo de imagenes -->
+            <div class="fondo">
+                <div id="slideshow">
+                </div>
+            </div>
+    	<div class="container text-center">    	
+
+        <form id="login">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input id="logincorreo" type="text" class="form-control" name="correo" placeholder="Correo">
+            </div>
+             <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="loginclave" type="password" class="form-control" name="clave" placeholder="Clave">
+            </div>
+            <a href="javascript:;" onclick="form_login();"><div class="panel panel-default btingreso">
+                <div class="panel-body">Ingresa a tu cuenta</div>
+            </div></a>
+            <div id="resultado">..</div>
+        </form>
+        <div class="row">
+                <div class="col-sm-12">
+                  <a href="olvido.html" class="olvido">¿Has olvidado tu clave? <strong>Pincha aqui!</strong></a><br>
+                  <a href="../informacion.html" class="olvido">Regresa a información</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact" class="jumbotro text-center">
+            <h6>Copyright wakusoft@2017</h6>
+        </div>
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+    </body>
+</html>

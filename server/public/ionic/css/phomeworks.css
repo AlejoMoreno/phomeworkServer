@@ -1,0 +1,339 @@
+/*Todos los derechos reservador por el autor
+
+phomework y wakusoft (los estilos son con 
+
+ ayuda de boostrap)
+
+*/
+
+/******************************************
+
+*										  *
+
+*  Estilos para el html informacion.html  *	
+
+*										  *
+
+*******************************************/
+
+*{
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+@font-face {
+
+	font-family: GeosansLight;
+
+	src: url(../css/GeosansLight.ttf);
+
+}
+
+@font-face {
+
+	font-family: GeosansLights;
+
+	src: url(css/GeosansLight.ttf);
+
+}
+
+body{
+
+	font-family: GeosansLight,GeosansLights;
+
+	overflow-x: hidden;
+
+	font-size: 20px;
+
+}
+
+a,a:hover{text-decoration: none;color: black;}
+
+.container{
+
+    padding-top: 80px;
+
+	padding-bottom: 100px;
+
+	margin-top: 30px;
+
+}
+
+.error{
+
+    color: red;
+
+    border: 1px solid red;
+
+}
+
+
+
+/*	titulos en navbar	*/
+
+.jumbotro{
+
+    position: fixed;
+
+    width: 101%;
+
+	padding: 2px;
+
+	background: #207ce5;
+
+	color: white;
+
+    z-index: 110;
+
+}
+
+.inicio{
+
+    top: 0px;
+
+    left: -2px;
+
+}
+
+.informacion{
+
+	background: #ff0084;
+
+    color: white;
+
+}
+
+.estudiante{
+
+	background: #207ce5;
+
+    color: white;
+
+}
+
+.docente{
+
+	background: #91e842;
+
+    color: white;
+
+}
+
+.ingreso{
+
+	background: #e73827;
+
+    color: white;
+
+}
+
+
+
+.informacion:hover{
+
+    background: #ff0084;
+
+    color: white;
+
+}
+
+.estudiante:hover{
+
+    background: white;
+
+    color: #207ce5;
+
+}
+
+.docente:hover{
+
+    background: white;
+
+    color: #91e842;
+
+}
+
+.ingreso:hover{
+
+    background: white;
+
+    color: #e73827;
+
+}
+
+#contact{
+
+    position: fixed;
+
+    bottom: 0px;
+
+    width: 100%;
+
+}
+
+
+
+/*	Fondo DE IMAGENES INFORMATIVAS	*/
+
+#slideshow {
+
+    position: fixed;
+
+    width: 200%;
+
+    height: 200%;
+
+    overflow: hidden;
+
+    border: 8px solid #fff;
+
+    z-index: -20;
+
+    margin-left:-180px;
+
+    margin-top:-120px;
+
+    filter: blur(15px);
+
+    background-image: url(../image/fondo5.jpg); 
+
+}
+
+/*	REGISTRO DOCENTE*/
+
+.input-group-addon{background: transparent;color: black;}
+
+.btdocente:hover{
+
+	background: #53ad1b;
+
+    color: white;
+
+}
+
+.btdocente{
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #53ad1b;
+
+}
+
+.olvido{
+
+	color: black;
+
+}
+
+/*	REGISTRO ESTUDIANTE	*/
+
+.btestudiante:hover{
+
+    background: #207ce5;
+
+    color: white;
+
+}
+
+.btestudiante{
+
+    background: transparent;
+
+    color: #207ce5;
+
+    border: 1px solid #207ce5;
+
+}
+
+.olvido2{
+
+	color: black;
+
+}
+
+/*	LOGIN	*/
+
+.btingreso:hover{
+
+    background: #e73827;
+
+    color: white;
+
+}
+
+.btingreso{
+
+    background: transparent;
+
+    color: #e73827;
+
+    border: 1px solid #e73827;
+
+}
+
+/*	INPUTS Y FORMULARIOS 	*/
+
+.areas select{
+width: 500px;
+}
+
+.input-group input,.input-group textarea{
+
+	padding: 18px;
+
+	background: transparent;
+
+	border: 0px solid;
+
+	color: black; 
+
+	font-weight: bold;
+
+}
+
+.input-group input::-webkit-input-placeholder { color: black; font-weight :bold; }
+
+.input-group input:-moz-placeholder { color: black; font-weight: bold; }
+
+.input-group input::-moz-placeholder { color: black; font-weight: bold; }
+
+.input-group input:-ms-input-placeholder { color: black; font-weight: bold; }
+
+.input-group textarea::-webkit-input-placeholder { color: black; font-weight :bold; }
+
+.input-group textarea:-moz-placeholder { color: black; font-weight: bold; }
+
+.input-group textarea::-moz-placeholder { color: black; font-weight: bold; }
+
+.input-group textarea:-ms-input-placeholder { color: black; font-weight: bold; }
+
+.msm{
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+-webkit-box-shadow: 10px 10px 47px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 47px -19px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 47px -19px rgba(0,0,0,0.75);
+}
+
+.soluciontareas{
+    width: 100%;
+    padding: 5%;    
+-webkit-box-shadow: 10px 10px 47px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 47px -19px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 47px -19px rgba(0,0,0,0.75);   
+}
+
+.contenidoTareas{
+    margin: 0px;width:100%;height:160px;border:2px solid white;
+}
+
+.contenidotareasnombre{
+    float: left;width: 50%;margin: 10px;background: transparent;
+}

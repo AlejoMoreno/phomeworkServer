@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the 
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+        <script src="../js/forms.js"></script>
+        <script src="../js/configuration.js"></script>
+        <title>Phomework</title>
+
+    </head>
+    <body>
+
+        <div class="jumbotro text-center inicio">
+            <h3>FAQs</h3>
+            <div style="background:black;text-align: right;opacity:0.3;">
+                <a href="miperfil.html" style="color:white"><span class="glyphicon glyphicon-user" style="padding:5px;"></span></a>
+                <a href="notificaciones.html" style="color:white"><span class="glyphicon glyphicon-info-sign" style="padding:5px;"></span></a>
+                <a href="soporte.html" style="color:white"><span class="" style="padding:5px;">FAQs</span></a>
+                <a href="cerrar.html" style="color:white"><span class="glyphicon glyphicon-off" style="padding:5px;"></span></a>
+            </div>
+            <a href="index.html"><img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png"></a>
+        </div>
+
+
+        <!-- Fondo de imagenes -->
+            <div class="fondo">
+                <div id="slideshow">
+                </div>
+            </div>
+
+
+        <div class="container">
+          <h2>Preguntas frecuentes</h2>
+          <p>Estas son algunas de nuestras preguntas frecuentes</p>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">¿Qué es phomework?</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">PhomeWork es una aplicación móvil con tecnología Android. Una vez descargada en tu dispositivo móvil (Smartphone o Tablet) creas una cuenta y podrás interactuar con personas especializadas en todas las líneas del conocimiento académico.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">¿Comó funciona?</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">La interacción está basada en la necesidad de un aprendiz por entender un tema o solucionar una tarea asignada por su institución educativa, y la capacidad de un grupo de profesionales dispuestos a colaborarte con la solución y comprensión de dicha temática.<br>
+                    <ul style="margin-left:50px;">
+                    <li>El usuario crea una cuenta y elige el área del conocimiento en la que requiere asesoría.</li>
+                    <li>Luego un profesional se contacta con el usuario, a través de PhomeWork chat, para atender a sus requerimientos..</li>
+                    <li>Para recargar tu cuenta en PhomeWork como estudiante, solo debes:</li>
+                    <li>Ir a la opción “recargar” que se encuentra en tu cuenta de PhomeWork y sigue las instrucciones.</li>
+                    <li>Tu tarea o asesoría estará disponible para que la descargues dentro de los términos que hayas acordado con el profesor y previo pago por el servicio.</li>
+                    <li>Los costos de tus trabajos los acuerdas con el profesor o asesor encargado de tu caso.</li>
+                    <li>Como el servicio es a través de dispositivos móviles los costos son muy bajos, todo depende de la complejidad y extensión de tu trabajo.</li>
+                    <li>Al final recibes tu asesoría o trabajo en el formato que desees. Puedes enviar texto, tablas, audios, links, etc.</li></ul></div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Cuéntanos  tu experiencia</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <form id='form_comentarios'>
+                        <p>Brevemente comenta a phomework tus dificultades con la aplicación</p>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
+                            <textarea id="registercomentario" type="text" class="form-control" name="comentario" placeholder="Cuéntanos tu experiencia en phomework"></textarea>
+                        </div>
+                        <a href="javascript:;" onclick="form_comentarios();"><div class="panel panel-default btingreso">
+                            <div class="panel-body">Enviar Comentario</div>
+                        </div></a>
+
+                        <div id="resultado">..</div>
+                        
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+
+
+        <div id="contact" class="jumbotro text-center">
+
+            <h6>Copyright wakusoft@2017</h6>
+
+        </div>
+
+</html>
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/template.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>Phomework</title>
+    </head>
+    <body>
+
+    	<div style="position:absolute;top: 0%;left:-50%;" id="contenido" class="text-center">
+    		<img class="imgr" src="image/phome-ico.png"><br><br><br>
+    		<img id="imgr2" src="image/phome-text.png">
+    	</div>
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+    </body>
+</html>
+
+<script>
+$(document).ready(function(){
+    var idtoken = getParameterByName('idtoken');
+    if(idtoken!=''){
+        localStorage.setItem("pushID", idtoken);  
+    } 
+    else{
+        localStorage.setItem("pushID", ""); 
+    }
+    
+    $( "#contenido" ).animate({ "left": "+=70%" }, 1000 );
+    $( "#contenido" ).animate({ "top": "+=30%" }, 2200 );
+});
+//http://phomework.com.co/www/screenshot.html?idtoken=89571014016061223289
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+</script>
+
+<style type="text/css">
+
+
+</style>
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+var pagina="informacion.html";
+function redireccionar() 
+{
+location.href=pagina
+} 
+setTimeout ("redireccionar()", 5000);
+
+</script>
+
+<style type="text/css">
+@keyframes rotate {from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}}
+
+.imgr{
+-webkit-animation: 3s rotate linear infinite;
+animation: 5s rotate linear infinite;
+-webkit-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+
+}
+@keyframes vibration {
+    0% {width: 60%;}
+    25% {width: 80%;}
+    50% {width: 70%;}
+    100% {width: 100%;}
+}
+
+/* The element to apply the animation to */
+#imgr2 {
+    animation-name: vibration;
+    animation-duration: 4s;
+}
+</style>

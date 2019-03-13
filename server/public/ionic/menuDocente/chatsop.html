@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the 
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+        <script src="../js/forms.js"></script>
+        <script src="../js/configuration.js"></script>
+        <title>Phomework</title>
+<!-- ENVIO DE DATOS PARA VERIFICAR SI EXISTE UNA NOTIFICACION -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$.ajaxSetup({'cache':false});
+setInterval("loadNotifi()",500);    
+});
+function loadNotifi(){
+var parametros = {
+    "correo" : localStorage.getItem("correo"),
+    "tipo" : "profesores"
+};
+$.ajax({
+    type: 'POST',
+    url: 'http://phomework.com.co/www/php/notificaciones/sendWebMessage.php',
+    data: parametros
+}).done(function(info){
+    //var altura = $('#resultado').prop('scrollHeight');
+    //$('#resultado').scrollTop(altura);
+});
+}
+</script>
+    </head>
+    <body>
+
+        <div class="jumbotro text-center inicio">
+            <h3>Phomework</h3>
+        </div>
+
+        <script src="../js/push.min.js"></script>
+         <script>
+
+         $(document).ready(function(){
+                var emisor = getParameterByName("docente");
+                var receptor = getParameterByName("estudiante");
+                var mensaje = '';
+                $.ajaxSetup({'cache':false});
+                setInterval("loadOldMesseges()",500);
+
+                var altura = $('#resultado').height(); 
+                $("html, body").animate({scrollTop:altura+"px"});
+         });
+
+         var loadOldMesseges = function(){
+            var parametros = {
+                "estudiante" : getParameterByName("estudiante"),
+                "docente" : getParameterByName("docente")
+            };
+            $.ajax({
+                type: 'POST',
+                url: '../php/chat/phomechat.php',
+                data: parametros
+            }).done(function(info){
+                $('#resultado').html(info);
+                $('#resultado p:last-child').css({'background-color' : 'lightblue'});
+
+                var altura = $('#resultado').height(); 
+                $("html, body").animate({scrollTop:altura+"px"});
+            });
+        }
+
+            function enviarchat(){
+
+                var emisor = getParameterByName("docente");
+                var receptor = getParameterByName("estudiante");
+                var mensaje = $('#mensaje').val();
+
+                chat(emisor,receptor,mensaje,"docente");
+                $('#mensaje').val('');
+
+            }
+
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+                return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+
+
+            }
+
+
+            </script>
+
+                    <div id="resultado" style="position: relative;top:80px; margin-top: 20px;  border: 1px solid #CCCCCC; padding: 12px;  border-radius: 5px; overflow-x: hidden;padding-bottom: 200px;">...<h1>resultado </h1></div>                
+
+
+        <div id="contact" class="jumbotro">
+            <div>
+                <textarea style="width: 70%;height: 70px;background: white;border: 1px solid #e2e2e2; color:black" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                <div onclick="enviarchat();" style="float:right;width: 20%;"><div onclick="enviarchat();" ><img width="70" src="../image/chat.png"></div>
+            </div>
+            <h6>Copyright wakusoft@2017</h6>
+        </div>
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+    </body>
+</html>

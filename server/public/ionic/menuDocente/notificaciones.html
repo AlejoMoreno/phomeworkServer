@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the 
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+        <script src="../js/forms.js"></script>
+        <script src="../js/persistanData.js"></script>
+        <title>Phomework</title>
+    </head>
+    <body>
+
+        <div class="jumbotro text-center inicio">
+            <h3>Mis Notificaciones</h3>
+            <div style="background:black;text-align: right;opacity:0.3;">
+                <a href="miperfil.html" style="color:white"><span class="glyphicon glyphicon-user" style="padding:5px;"></span></a>
+                <a href="notificaciones.html" style="color:white"><span class="glyphicon glyphicon-info-sign" style="padding:5px;"></span></a>
+                <a href="soporte.html" style="color:white"><span class="" style="padding:5px;">FAQs</span></a>
+                <a href="cerrar.html" style="color:white"><span class="glyphicon glyphicon-off" style="padding:5px;"></span></a>
+            </div>
+            <a href="index.html"><img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png"></a>
+        </div>
+
+        <!-- Fondo de imagenes -->
+            <div class="fondo">
+                <div id="slideshow">
+                </div>
+            </div>
+
+    	<div class="container text-center">    	
+            <form id="registerEstu">
+                <script>
+                $(document).ready(function(){
+                    selectidDocente();
+                    selectidNotificaciones1();
+
+                    function selectidNotificaciones1(){
+                        var id = localStorage.getItem("id");
+                        var parametros = {
+                            "id" : id,
+                            "consulta" : 'docente',
+                            "encrypt" : ''
+                        }
+                        $.ajax({
+                            data:  parametros,
+                            url:   host+'php/consultas/consultarNotificacion.php',
+                            type:  'post',
+                            beforeSend: function () {
+                                $('#notificaciones').html("Cargando datos.");
+                            },
+                            success:  function (response) {
+                                $('#notificaciones').html(response);
+                            }
+                        });
+                    }
+
+                });
+
+                function selectidDocente(){
+                    var id = localStorage.getItem("id");
+                    var parametros = {
+                        "id" : id,
+                        "consulta" : 'docente',
+                        "encrypt" : ''
+                    }
+                    $.ajax({
+                        data:  parametros,
+                        url:   host+'php/consultas/iddocente.php',
+                        type:  'post',
+                        beforeSend: function () {
+                            $('#estudiante').html("Cargando datos.");
+                        },
+                        success:  function (response) {
+                            $('#estudiante').html(response);
+                        }
+                   });
+
+                }
+                                </script>
+                <div id="resultado">..</div>
+                <div id="notificaciones">..</div>
+            </form>
+            
+        </div>
+
+        <div id="contact" class="jumbotro text-center">
+            <h6>Copyright wakusoft@2017</h6>
+        </div>
+
+<script id="chatcolhost12" src="/chatcolhost.php"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the 
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/phomeworks.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- FUNCIONES PROPIAS PHOMEWORK -->
+        <script src="../js/forms.js"></script>
+        <script src="../js/configuration.js"></script>
+       <script src="../js/persistanData.js"></script>
+       <meta name="theme-color" content="#207ce5">
+        <link rel="icon" sizes="192x192" href="../image/phome-ico.png">
+        <title>Phomework</title>
+    </head>
+    <body>
+
+        <div class="jumbotro text-center inicio">
+            <h3>Recargar Tokens</h3>
+            <div style="background:black;text-align: left;opacity:0.3;" id="tokens">
+                <script>
+                    $(document).ready(function(){
+                        tokens();
+                    });
+                </script>
+            </div>
+            <div style="background:black;text-align: right;opacity:0.3;">
+                <a href="miperfilestudiante.html" style="color:white"><span class="glyphicon glyphicon-user" style="padding:5px;"></span></a>
+                <a href="notificaciones.html" style="color:white"><span class="glyphicon glyphicon-info-sign" style="padding:5px;"></span></a>
+                <a href="soporte.html" style="color:white"><span class="" style="padding:5px;">FAQs</span></a>
+                <a href="cerrar.html" style="color:white"><span class="glyphicon glyphicon-off" style="padding:5px;"></span></a>
+            </div>
+            <a href="index.html"><img class="imgr" style="width:40px;position:absolute;left:10px;top:8px;" src="../image/phome-ico.png"></a>
+        </div>
+
+        <!-- Fondo de imagenes -->
+            <div class="fondo">
+                <div id="slideshow">
+                </div>
+            </div>
+
+<div class="container text-center"> 
+<form method="POST" action="../php/payu/efectivo.php">
+<p>Recuerda que cada token tiene un valor de $1.000 pesos la unidad.</p><br>
+    <div class="form-group">
+      <label for="sel1">Cantidad de tokens:</label>
+      <select name="referenceCode" id="referenceCode" class="form-control">
+          <option value="0">SELECCIONA LA CANTIDAD DE TOKENS</option>
+          <option value="10">10 Tokens</option>
+          <option value="11">11 Tokens</option>
+          <option value="20">20 Tokens</option>
+          <option value="30">30 Tokens</option>
+          <option value="40">40 Tokens</option>
+      </select> 
+    <br><br>
+   </div>
+</form>
+
+<div id="resultado">
+      
+  ...
+
+</div>
+
+
+<script type="text/javascript">
+    
+//cargue de formulario dependiendo lo esogido
+$(document).ready(function(){
+    $("#referenceCode").change(function(){
+        var valor = parseInt($("#referenceCode").val())*1000;
+        alert('El valor a recargar en token es : $ '+ valor);
+        $('#resultado').html(generarForm(valor));
+    });
+});
+
+function generarForm(valor){
+    var buttonId = '';
+    var signature = '';
+    var referenceCode = '';
+    if(valor==10000){
+        buttonId = 'DZf43s1g8M8gM1SzmJBG/GNdEaz4cGofI5g5SCpeKnOxg5UhvTzI4A==';
+        signature = 'd971b8872238eb2aeaa9e00540f01c2bc208c1bf8a5021cc32c3dc3f6efdc86f';
+        referenceCode = '01';
+    }
+    if(valor==11000){
+        buttonId = 'KB0Y4bnM+Rp75G9A2Xczrui5pmebD4Dw9JAH2ksaYmtPgAI6HWoU9Q==';
+        signature = '126b78f07d714a4c3f713f4cd177b49a6682445a40bc9db9e1a0986e91f99c01';
+        referenceCode = '011';
+    }
+    if(valor==20000){
+        buttonId = 'FvSyjbYkrSq2kzYb7HJMLLKtsvueJ1oH8np+jVHkm4W7SfXq3iVuBQ==';
+        signature = '92c4a5a4b90eb487158d18b9e5cbbf510770a72e1ee665e6643012b1b5a04939';
+        referenceCode = '02';
+    }
+    if(valor==30000){
+        buttonId = 'YfeBpicnqRbFC6rvFPyiaXCE2V9qCrWLYNWdhlNx7G8db7mS5j6V6Q==';
+        signature = 'f2cfac04d4d66457d9a79e308edc16614ac37ff6f537ec31f566f2bc4a20bd14';
+        referenceCode = '03';
+    }
+    if(valor==40000){
+        buttonId = 'RNmq22d2SG6WXKFgYaJOGs7/g4v189XQFu/M5Wzk5SeaPMPcUzwPgg==';
+        signature = '89ac92bbd71143a96b31de1047ea75f587aa1e8d845a51681e63af426f0bc5eb';
+        referenceCode = '04';
+    }
+    return '<form method="post" id="formulariopayu" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">'+
+          '<input type="image" border="0" alt="" src="http://www.payulatam.com/img-secure-2015/boton_pagar_pequeno.png" onClick="this.form.urlOrigen.value = window.location.href;"/>'+
+          '<input name="buttonId" type="hidden" value="'+buttonId+'"/>'+
+          '<input name="merchantId" type="hidden" value="631982"/>'+
+          '<input name="accountId" type="hidden" value="634315"/>'+
+          '<input name="description" type="hidden" value="Recarga de '+valor+' pesos"/>'+
+          '<input name="referenceCode" type="hidden" value="'+referenceCode+'"/>'+
+          '<input name="amount" type="hidden" value="'+valor+'"/>'+
+          '<input name="tax" type="hidden" value="0"/>'+
+          '<input name="taxReturnBase" type="hidden" value="0"/>'+
+          '<input name="currency" type="hidden" value="COP"/>'+
+          '<input name="lng" type="hidden" value="es"/>'+
+          '<input name="responseUrl"    type="hidden"  value="http://phomework.com.co/www/regresopayu.php" >'+
+          '<input name="confirmationUrl"    type="hidden"  value="http://phomework.com.co/www/confirmacionpayu.php" >'+
+          '<input name="displayShippingInformation" type="hidden" value="YES"/>'+
+          '<input name="buttonType" value="SIMPLE" type="hidden"/>'+
+          '<input name="signature" value="'+signature+'" type="hidden"/>'+
+        '</form>';
+}
+
+
+</script>
+
+<p>Los Tokens funcionan para que phomework habilite la solucion a tu tarea de acuerdo al precio acordado con el especialista que la realizó.</p>
+</div>
+        <div id="contact" class="jumbotro text-center">
+            <h6>Copyright wakusoft@2017</h6>
+        </div>
+
+    </body>
+</html>
+
+
